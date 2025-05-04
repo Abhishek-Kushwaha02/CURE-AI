@@ -6,8 +6,7 @@ import requests
 
 app = Flask(__name__)
 
-pushover_user_key = 'uynweqmpdq8emwc1nuupnnyv649o3w'  # Replace with your Pushover user key
-pushover_api_token = 'ap8q684nhjxrwt7n4k5b79q4chbxea'  # Replace with your Pushover API token
+
 def send_pushover_notification(message):
     url = 'https://api.pushover.net/1/messages.json'
     data = {
